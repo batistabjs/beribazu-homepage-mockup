@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Centros de treinamento do Grupo Beribazu — encontre o mais próximo de você.">
+  <title>Centros de Treinamento — Capoeira Beribazu</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="../index.html" class="logo" aria-label="Capoeira Beribazu">
+      <img src="../images/beribazu_logo.png" alt="Logo Capoeira Beribazu" class="logo-emblema">
+      <div class="logo-texto">
+        <span class="logo-nome">Capoeira Beribazu</span>
+        <span class="logo-slogan">Desde 1972</span>
+      </div>
+    </a>
+    <nav class="nav-principal" id="nav-principal" aria-label="Menu principal">
+      <ul>
+        <li><a href="../index.html#sobre">Sobre</a></li>
+        <li><a href="../index.html#beribazu-pelo-mundo">Beribazu pelo Mundo</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="../index.html#contato" class="nav-cta">Contato</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-principal">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- PAGE HEADER -->
+<section class="resultados-header" aria-label="Resultados da busca">
+  <nav class="breadcrumb" aria-label="Navegação estrutural">
+    <a href="../index.html">Home</a>
+    <span aria-hidden="true">›</span>
+    <a href="../index.html#beribazu-pelo-mundo">Beribazu pelo Mundo</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page" id="resultados-localizacao">Centros</span>
+  </nav>
+  <h1>Centros de Treinamento</h1>
+</section>
+
+<!-- FILTROS HORIZONTAIS -->
+<section class="ct-filtros-section" aria-label="Filtros de busca">
+  <div class="ct-filtros-inner">
+    <form id="form-busca-inline" class="ct-filtros-form" novalidate aria-label="Refinar busca">
+      <div class="ct-filtro-grupo">
+        <label for="fi-pais">País</label>
+        <select id="fi-pais" name="pais">
+          <option value="">Todos os países</option>
+          <option value="Brasil">🇧🇷 Brasil</option>
+          <option value="Portugal">🇵🇹 Portugal</option>
+          <option value="Estados Unidos">🇺🇸 Estados Unidos</option>
+        </select>
+      </div>
+      <div class="ct-filtro-grupo">
+        <label for="fi-estado">Estado</label>
+        <select id="fi-estado" name="estado" disabled>
+          <option value="">Todos os estados</option>
+        </select>
+      </div>
+      <div class="ct-filtro-grupo">
+        <label for="fi-cidade">Cidade</label>
+        <select id="fi-cidade" name="cidade" disabled>
+          <option value="">Todas as cidades</option>
+        </select>
+      </div>
+      <div class="ct-filtro-grupo ct-filtro-ordenar">
+        <label for="ordenar-select">Ordenar</label>
+        <select id="ordenar-select">
+          <option value="relevancia">Relevância</option>
+          <option value="nome">Nome</option>
+          <option value="cidade">Cidade</option>
+          <option value="mestre">Mestre</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-vermelho ct-filtro-btn-buscar">Buscar</button>
+    </form>
+  </div>
+</section>
+
+<!-- RESULTADOS -->
+<main class="pagina-resultados" id="main-content">
+  <div class="resultados-body">
+
+    <div class="filtros-barra">
+      <p id="total-resultados" aria-live="polite"><strong>0</strong> centros encontrados</p>
+    </div>
+
+    <!-- Lista de Centros -->
+    <ul class="centros-lista" id="centros-grid" aria-label="Lista de centros de treinamento" aria-live="polite">
+      <li style="text-align:center; padding: 3rem; color: var(--cinza-claro);">Carregando centros...</li>
+    </ul>
+
+    <div style="text-align: center; margin-top: 4rem;">
+      <a href="../index.html#beribazu-pelo-mundo" class="btn btn-primario">← Nova busca</a>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-bottom" style="padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+      <p>© 2025 Capoeira Beribazu — Arte-Luta desde 1972.</p>
+      <a href="../index.html" style="color: var(--vermelho-claro);">← Voltar ao início</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
