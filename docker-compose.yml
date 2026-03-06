@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  beribazu-homepage-mockup:
+    build: .
+    image: beribazu-homepage-mockup
+    container_name: beribazu-homepage-mockup
+    ports:
+      - "8072:80"
+    networks:
+      - nginx_proxy
+
+networks:
+  nginx_proxy:
+    external: true
