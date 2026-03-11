@@ -1,7 +1,5 @@
 # Mockup para o WebApp do Grupo de Capoeira Beribazu
 
-Aplicação web desenvolvida em Python com Flask para exibir e reproduzir filmes, séries e TV ao vivo através de uma API externa. Interface inspirada no Netflix.
-
 ## Características
 
 - **Home Page**
